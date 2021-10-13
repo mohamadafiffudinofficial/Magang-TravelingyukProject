@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="5dp"
+    android:clickable="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textKeyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keyword : "
+            android:textSize="15dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginVertical="5dp"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textJumlahExplored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explored : "
+            android:textSize="15dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginVertical="5dp"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textTanggalExplored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explored at "
+            android:textSize="15dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
